@@ -1,0 +1,131 @@
+{
+  "hero": {
+    "title": "Get in Touch",
+    "subtitle": "Have questions about our AI-powered stationery? We'd love to hear from you."
+  },
+  "contact": {
+    "email": {
+      "primary": "hello@penco.in",
+      "support": "support@penco.in",
+      "business": "partnerships@penco.in"
+    },
+    "phone": {
+      "primary": "+91 98765 43210",
+      "support": "+91 98765 43211"
+    },
+    "address": {
+      "office": {
+        "street": "WeWork Galaxy, 43, Residency Road",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400001",
+        "country": "India"
+      }
+    },
+    "hours": {
+      "weekdays": "Monday - Friday: 9:00 AM - 6:00 PM IST",
+      "weekends": "Saturday: 10:00 AM - 4:00 PM IST",
+      "closed": "Sunday: Closed"
+    }
+  },
+  "form": {
+    "title": "Send us a Message",
+    "fields": [
+      {
+        "name": "name",
+        "label": "Full Name",
+        "type": "text",
+        "required": true,
+        "placeholder": "Enter your full name"
+      },
+      {
+        "name": "email",
+        "label": "Email Address",
+        "type": "email",
+        "required": true,
+        "placeholder": "your@email.com"
+      },
+      {
+        "name": "phone",
+        "label": "Phone Number",
+        "type": "tel",
+        "required": true,
+        "placeholder": "8302020975"
+      },
+      {
+        "name": "subject",
+        "label": "Subject",
+        "type": "select",
+        "required": true,
+        "options": [
+          "General Inquiry",
+          "Product Support",
+          "Custom Orders",
+          "Partnership",
+          "Media Inquiry",
+          "Other"
+        ]
+      },
+      {
+        "name": "message",
+        "label": "Message",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "Tell us how we can help you..."
+      }
+    ],
+    "submitText": "Send Message",
+    "successMessage": "Thank you for your message! We'll get back to you within 24 hours.",
+    "errorMessage": "There was an error sending your message. Please try again."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "How does AI personalization work?",
+        "answer": "Our AI analyzes your preferences, writing style, and usage patterns to suggest personalized designs, layouts, and features that match your needs."
+      },
+      {
+        "question": "What materials do you use?",
+        "answer": "We use premium, sustainable materials including recycled paper, eco-friendly inks, and responsibly sourced leather for our covers."
+      },
+      {
+        "question": "Do you ship internationally?",
+        "answer": "Yes, we ship to over 15 countries worldwide. Shipping costs and delivery times vary by location."
+      },
+      {
+        "question": "Can I customize existing designs?",
+        "answer": "Absolutely! All our products can be customized with your preferred colors, layouts, and personal touches through our AI design tool."
+      },
+      {
+        "question": "What's your return policy?",
+        "answer": "We offer a 30-day satisfaction guarantee. If you're not happy with your purchase, we'll provide a full refund or replacement."
+      }
+    ]
+  },
+  "social": {
+    "title": "Follow Us",
+    "platforms": [
+      {
+        "name": "LinkedIn",
+        "url": "https://linkedin.com/company/penco-in",
+        "icon": "linkedin"
+      },
+      {
+        "name": "Twitter",
+        "url": "https://twitter.com/penco_in",
+        "icon": "twitter"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://instagram.com/penco.in",
+        "icon": "instagram"
+      },
+      {
+        "name": "Facebook",
+        "url": "https://facebook.com/penco.in",
+        "icon": "facebook"
+      }
+    ]
+  }
+}

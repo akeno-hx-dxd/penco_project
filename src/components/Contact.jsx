@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, Clock, Globe } from 'lucide-react';
+import contactConfig from '../../config/contact.json';
 
-const Contact: React.FC = () => {
+const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    company: '',
+    phone: '',
+    subject: '',
     message: ''
   });
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
@@ -17,39 +19,41 @@ const Contact: React.FC = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission here
+    //parse the form 
+    //and send to smtp server
     console.log('Form submitted:', formData);
     // Reset form
-    setFormData({ name: '', email: '', company: '', message: '' });
+    setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
   };
 
   const contactInfo = [
     {
       icon: Mail,
       title: 'Email Us',
-      details: 'hello@penco.com',
-      action: 'mailto:hello@penco.com'
+      details: contactConfig.contact.email.primary,
+      action: `mailto:${contactConfig.contact.email.primary}`
     },
     {
       icon: Phone,
       title: 'Call Us',
-      details: '+1 (555) 123-4567',
-      action: 'tel:+15551234567'
+      details: contactConfig.contact.phone.primary,
+      action: `tel:${contactConfig.contact.phone.primary.replace(/\s+/g, '')}`
     },
     {
       icon: MapPin,
       title: 'Visit Us',
-      details: '123 Innovation Drive, Tech City, TC 12345',
+      details: `${contactConfig.contact.address.office.street}, ${contactConfig.contact.address.office.city}`,
       action: 'https://maps.google.com'
     }
   ];
 
   const businessHours = [
-    { day: 'Monday - Friday', hours: '9:00 AM - 6:00 PM' },
-    { day: 'Saturday', hours: '10:00 AM - 4:00 PM' },
-    { day: 'Sunday', hours: 'Closed' }
+    { day: 'Weekdays', hours: contactConfig.contact.hours.weekdays },
+    { day: 'Saturday', hours: contactConfig.contact.hours.weekends },
+    { day: 'Sunday', hours: contactConfig.contact.hours.closed }
   ];
 
   return (
@@ -57,24 +61,23 @@ const Contact: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Get In Touch
+          <h2 className="text-4xl md:text-5xl font-bold font-luismi text-white mb-4">
+            {contactConfig.hero.title}
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Ready to transform your business? Let's discuss how we can help you 
-            achieve your goals with innovative technology solutions.
+            {contactConfig.hero.subtitle}
           </p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
           <div className="bg-white rounded-xl p-8 shadow-xl">
-            <h3 className="text-2xl font-bold text-slate-800 mb-6">Send us a message</h3>
+            <h3 className="text-2xl font-bold font-luismi text-slate-800 mb-6">{contactConfig.form.title}</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                    Full Name *
+                    {contactConfig.form.fields[0].label} {contactConfig.form.fields[0].required && '*'}
                   </label>
                   <input
                     type="text"
@@ -82,14 +85,14 @@ const Contact: React.FC = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleInputChange}
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
-                    placeholder="John Doe"
+                    required={contactConfig.form.fields[0].required}
+                    className="w-full min-w-0 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                    placeholder={contactConfig.form.fields[0].placeholder}
                   />
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                    Email Address *
+                    {contactConfig.form.fields[1].label} {contactConfig.form.fields[1].required && '*'}
                   </label>
                   <input
                     type="email"
@@ -97,41 +100,60 @@ const Contact: React.FC = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
-                    placeholder="john@company.com"
+                    required={contactConfig.form.fields[1].required}
+                    className="w-full min-w-0 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                    placeholder={contactConfig.form.fields[1].placeholder}
+                  />
+                </div>
+                <div>
+                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                    {contactConfig.form.fields[2].label} {contactConfig.form.fields[2].required && '*'}
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleInputChange}
+                    required={contactConfig.form.fields[2].required}
+                    className="w-full min-w-0 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                    placeholder={contactConfig.form.fields[2].placeholder}
                   />
                 </div>
               </div>
               
               <div>
-                <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
-                  Company Name
+                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
+                  {contactConfig.form.fields[3].label} {contactConfig.form.fields[3].required && '*'}
                 </label>
-                <input
-                  type="text"
-                  id="company"
-                  name="company"
-                  value={formData.company}
+                <select
+                  id="subject"
+                  name="subject"
+                  value={formData.subject}
                   onChange={handleInputChange}
+                  required={contactConfig.form.fields[3].required}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
-                  placeholder="Your Company"
-                />
+                >
+                  <option value="">Select a subject</option>
+                  {contactConfig.form.fields[3].options.map((option, index) => (
+                    <option key={index} value={option}>{option}</option>
+                  ))}
+                </select>
               </div>
               
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                  Message *
+                  {contactConfig.form.fields[4].label} {contactConfig.form.fields[4].required && '*'}
                 </label>
                 <textarea
                   id="message"
                   name="message"
                   value={formData.message}
                   onChange={handleInputChange}
-                  required
+                  required={contactConfig.form.fields[4].required}
                   rows={5}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 resize-none"
-                  placeholder="Tell us about your project or how we can help..."
+                  className="w-full min-w-0 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 resize-none"
+                  placeholder={contactConfig.form.fields[4].placeholder}
                 ></textarea>
               </div>
               
@@ -140,7 +162,7 @@ const Contact: React.FC = () => {
                 className="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2"
               >
                 <Send className="w-5 h-5" />
-                <span>Send Message</span>
+                <span>{contactConfig.form.submitText}</span>
               </button>
             </form>
           </div>
@@ -149,7 +171,7 @@ const Contact: React.FC = () => {
           <div className="space-y-8">
             {/* Contact Details */}
             <div className="bg-blue-800 rounded-xl p-8 text-white">
-              <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
+              <h3 className="text-2xl font-bold font-luismi mb-6">Contact Information</h3>
               <div className="space-y-6">
                 {contactInfo.map((item, index) => {
                   const IconComponent = item.icon;
@@ -177,11 +199,11 @@ const Contact: React.FC = () => {
             <div className="bg-gray-800 rounded-xl p-8 text-white">
               <div className="flex items-center space-x-3 mb-6">
                 <Clock className="w-6 h-6 text-blue-400" />
-                <h3 className="text-xl font-bold">Business Hours</h3>
+                <h3 className="text-xl font-bold font-luismi">Business Hours</h3>
               </div>
               <div className="space-y-3">
                 {businessHours.map((schedule, index) => (
-                  <div key={index} className="flex justify-between">
+                  <div key={index} className="flex justify-between flex-col">
                     <span className="text-gray-300">{schedule.day}</span>
                     <span className="text-white font-medium">{schedule.hours}</span>
                   </div>
@@ -193,7 +215,7 @@ const Contact: React.FC = () => {
             <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl p-8 text-white">
               <div className="flex items-center space-x-3 mb-4">
                 <Globe className="w-6 h-6" />
-                <h3 className="text-xl font-bold">Global Presence</h3>
+                <h3 className="text-xl font-bold font-luismi">Global Presence</h3>
               </div>
               <p className="text-blue-100 mb-4">
                 Serving clients worldwide with offices in major tech hubs and remote teams 

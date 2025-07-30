@@ -1,0 +1,78 @@
+{
+  "mission": "To revolutionize the stationery industry by combining AI-driven personalization with premium craftsmanship, making beautiful, intelligent stationery accessible to creators worldwide.",
+  "vision": "To become the global leader in AI-powered stationery, where every product tells a unique story and enhances the creative journey.",
+  "values": [
+    {
+      "title": "Innovation",
+      "description": "We leverage cutting-edge AI technology to create personalized experiences that adapt to individual needs and preferences."
+    },
+    {
+      "title": "Quality",
+      "description": "Every product is crafted with premium materials and attention to detail, ensuring durability and elegance."
+    },
+    {
+      "title": "Sustainability",
+      "description": "We're committed to eco-friendly practices, using sustainable materials and responsible manufacturing processes."
+    },
+    {
+      "title": "Creativity",
+      "description": "We believe in empowering creativity through thoughtfully designed tools that inspire and enable artistic expression."
+    }
+  ],
+  "story": {
+    "title": "Our Story",
+    "content": "Founded in 2024, Penco.in emerged from a simple observation: despite living in a digital world, people still crave the tactile experience of writing on paper. We saw an opportunity to bridge this gap by infusing traditional stationery with modern AI capabilities. Our journey began with a small team of designers, engineers, and stationery enthusiasts who shared a vision of making every writing experience personal and meaningful."
+  },
+  "team": [
+    {
+      "name": "Arjun Sharma",
+      "position": "Founder & CEO",
+      "bio": "Former product designer at Google with a passion for analog tools. Arjun combines tech expertise with a love for traditional craftsmanship.",
+      "image": "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "linkedin": "#",
+      "twitter": "#"
+    },
+    {
+      "name": "Priya Patel",
+      "position": "CTO",
+      "bio": "AI researcher and former Microsoft engineer. Priya leads our technology vision and AI personalization algorithms.",
+      "image": "https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "linkedin": "#",
+      "twitter": "#"
+    },
+    {
+      "name": "Rahul Gupta",
+      "position": "Head of Design",
+      "bio": "Award-winning product designer with 8+ years at leading design studios. Rahul ensures every product is both beautiful and functional.",
+      "image": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "linkedin": "#",
+      "twitter": "#"
+    },
+    {
+      "name": "Sneha Kumar",
+      "position": "Head of Operations",
+      "bio": "Supply chain expert who ensures our products reach customers with perfect quality and timing. Former Amazon operations manager.",
+      "image": "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "linkedin": "#",
+      "twitter": "#"
+    }
+  ],
+  "stats": [
+    {
+      "number": "50K+",
+      "label": "Happy Customers"
+    },
+    {
+      "number": "100+",
+      "label": "Unique Designs"
+    },
+    {
+      "number": "15+",
+      "label": "Countries Served"
+    },
+    {
+      "number": "98%",
+      "label": "Customer Satisfaction"
+    }
+  ]
+}

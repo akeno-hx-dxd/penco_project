@@ -1,0 +1,67 @@
+{
+  "company": {
+    "name": "Penco.in",
+    "tagline": "Where Creativity Meets Technology",
+    "industry": "AI-Enhanced Stationery Design & Personalization"
+  },
+  "mission": "Penco.in uses AI to reimagine stationery for the digital age—beautiful, customized, and smarter than ever.",
+  "vision": "Become the leading stationery brand where creativity meets technology, making premium personalized products accessible at scale.",
+  "description": "We design and sell stationery products—journals, planners, notebooks, notecards—powered by AI-driven personalization, intelligent layouts, and a seamless online experience.",
+  "hero": {
+    "title": "Welcome to ",
+    "subtitle": "Premium personalized journals, planners, and notebooks designed by artificial intelligence for the modern creative mind.",
+    "cta_primary": "Explore Products",
+    "cta_secondary": "Watch Demo",
+    "video_demo_url": "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4"
+  },
+  "stats": {
+    "products_available": "50+",
+    "happy_customers": "101+",
+    "ai_designs_generated": "700+",
+    "satisfaction_rate": "99%"
+  },
+  "features": [
+    {
+      "title": "AI-Powered Personalization",
+      "description": "Every product is uniquely designed based on your preferences, style, and usage patterns.",
+      "icon": "Brain"
+    },
+    {
+      "title": "Premium Materials",
+      "description": "High-quality paper, binding, and covers that match the intelligence of our designs.",
+      "icon": "Award"
+    },
+    {
+      "title": "Smart Layouts",
+      "description": "Intelligent page layouts that adapt to your writing style and organizational needs.",
+      "icon": "Layout"
+    },
+    {
+      "title": "Sustainable Production",
+      "description": "Eco-friendly materials and on-demand manufacturing to reduce waste.",
+      "icon": "Leaf"
+    }
+  ],
+  "products": [
+    {
+      "name": "AI Journals",
+      "description": "Personalized journaling experience with intelligent prompts and layouts",
+      "category": "journaling"
+    },
+    {
+      "name": "Smart Planners",
+      "description": "AI-optimized planning systems that adapt to your productivity style",
+      "category": "planning"
+    },
+    {
+      "name": "Creative Notebooks",
+      "description": "Designed for artists and creators with AI-suggested layouts and exercises",
+      "category": "creativity"
+    },
+    {
+      "name": "Custom Notecards",
+      "description": "Beautifully designed cards for every occasion, powered by AI aesthetics",
+      "category": "stationery"
+    }
+  ]
+}

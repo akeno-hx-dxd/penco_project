@@ -1,16 +1,10 @@
 import React, { useEffect } from 'react';
 import { X, Maximize, Minimize } from 'lucide-react';
 
-interface VideoModalProps {
-  isOpen: boolean;
-  onClose: () => void;
-  videoUrl: string;
-  title: string;
-}
 
-const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose, videoUrl, title }) => {
+const VideoModal = ({ isOpen, onClose, videoUrl, title }) => {
   const [isFullscreen, setIsFullscreen] = React.useState(false);
-  const modalRef = React.useRef<HTMLDivElement>(null);
+  const modalRef = React.useRef(null);
 
   useEffect(() => {
     if (isOpen) {
@@ -25,7 +19,7 @@ const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose, videoUrl, titl
   }, [isOpen]);
 
   useEffect(() => {
-    const handleEscape = (e: KeyboardEvent) => {
+    const handleEscape = (e) => {
       if (e.key === 'Escape') {
         if (isFullscreen) {
           setIsFullscreen(false);
@@ -48,7 +42,7 @@ const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose, videoUrl, titl
     setIsFullscreen(!isFullscreen);
   };
 
-  const handleBackdropClick = (e: React.MouseEvent) => {
+  const handleBackdropClick = (e) => {
     if (e.target === e.currentTarget) {
       onClose();
     }

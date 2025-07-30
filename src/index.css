@@ -1,3 +1,57 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Luismi Murder Font */
+@font-face {
+  font-family: 'Luismi Murder';
+  src: url('./assets/fonts/Lsmimrdr.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Prevent horizontal overflow */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Fix potential overflow issues */
+* {
+  box-sizing: border-box;
+}
+
+/* Ensure proper mobile handling */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure sections have proper spacing with fixed navbar */
+section {
+  scroll-margin-top: 4rem;
+}
+
+/* Mobile sidebar z-index fix */
+.mobile-sidebar {
+  z-index: 9999;
+}
+
+/* Prevent body scroll when mobile menu is open */
+body.menu-open {
+  overflow: hidden;
+}
+
+/* Enhanced mobile responsiveness */
+@media (max-width: 768px) {
+  .mobile-sidebar {
+    width: min(320px, 90vw);
+  }
+}

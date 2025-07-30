@@ -1,0 +1,231 @@
+{
+  "pageTitle": "Our Products",
+  "pageDescription": "Discover our collection of AI-powered stationery products, each uniquely designed to enhance your creativity and productivity.",
+  "categories": [
+    {
+      "id": "all",
+      "name": "All Products",
+      "description": "Browse our complete collection"
+    },
+    {
+      "id": "journals",
+      "name": "AI Journals",
+      "description": "Intelligent journaling companions"
+    },
+    {
+      "id": "planners",
+      "name": "Smart Planners",
+      "description": "Productivity-optimized planning systems"
+    },
+    {
+      "id": "notebooks",
+      "name": "Creative Notebooks",
+      "description": "Designed for artists and creators"
+    },
+    {
+      "id": "stationery",
+      "name": "Custom Stationery",
+      "description": "Personalized cards and accessories"
+    }
+  ],
+  "products": [
+    {
+      "id": "ai-mindful-journal",
+      "name": "AI Mindful Journal",
+      "category": "journals",
+      "price": "$49.99",
+      "originalPrice": "$69.99",
+      "rating": 4.9,
+      "reviews": 247,
+      "image": "https://images.pexels.com/photos/733852/pexels-photo-733852.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "shortDescription": "AI-powered prompts for mindful reflection and personal growth",
+      "tags": ["AI-Powered", "Mindfulness", "Personal Growth"],
+      "features": [
+        "Daily AI-generated reflection prompts",
+        "Mood tracking and insights",
+        "Premium leather binding",
+        "200 pages of quality paper"
+      ],
+      "colors": ["Midnight Black", "Ocean Blue", "Forest Green"],
+      "inStock": true,
+      "isNew": true,
+      "isFeatured": true
+    },
+    {
+      "id": "productivity-planner-pro",
+      "name": "Productivity Planner Pro",
+      "category": "planners",
+      "price": "$59.99",
+      "originalPrice": "$79.99",
+      "rating": 4.8,
+      "reviews": 189,
+      "image": "https://images.pexels.com/photos/3302183/pexels-photo-3302183.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "shortDescription": "Smart layout that adapts to your productivity style and goals",
+      "tags": ["AI-Optimized", "Goal Tracking", "Time Management"],
+      "features": [
+        "AI-optimized daily layouts",
+        "Goal tracking system",
+        "Time blocking templates",
+        "Weekly and monthly overviews"
+      ],
+      "colors": ["Charcoal Gray", "Rose Gold", "Silver"],
+      "inStock": true,
+      "isNew": false,
+      "isFeatured": true
+    },
+    {
+      "id": "creative-sketchbook-ai",
+      "name": "Creative Sketchbook AI",
+      "category": "notebooks",
+      "price": "$39.99",
+      "originalPrice": "$54.99",
+      "rating": 4.7,
+      "reviews": 156,
+      "image": "https://images.pexels.com/photos/261662/pexels-photo-261662.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "shortDescription": "AI-suggested layouts and creative exercises for artists",
+      "tags": ["Art & Design", "Creative Prompts", "Mixed Media"],
+      "features": [
+        "AI-generated creative prompts",
+        "Mixed media paper",
+        "Grid and blank page options",
+        "Spiral-bound for easy use"
+      ],
+      "colors": ["Pure White", "Cream", "Light Gray"],
+      "inStock": true,
+      "isNew": false,
+      "isFeatured": false
+    },
+    {
+      "id": "ai-gratitude-journal",
+      "name": "AI Gratitude Journal",
+      "category": "journals",
+      "price": "$44.99",
+      "originalPrice": "$59.99",
+      "rating": 4.9,
+      "reviews": 203,
+      "image": "https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "shortDescription": "Cultivate gratitude with AI-personalized daily prompts",
+      "tags": ["Gratitude", "Wellness", "Daily Practice"],
+      "features": [
+        "Personalized gratitude prompts",
+        "Progress tracking",
+        "Beautiful illustrated pages",
+        "Bookmark ribbon"
+      ],
+      "colors": ["Sunset Orange", "Lavender Purple", "Sage Green"],
+      "inStock": true,
+      "isNew": true,
+      "isFeatured": false
+    },
+    {
+      "id": "business-strategy-planner",
+      "name": "Business Strategy Planner",
+      "category": "planners", 
+      "price": "$69.99",
+      "originalPrice": "$89.99",
+      "rating": 4.6,
+      "reviews": 134,
+      "image": "https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "shortDescription": "AI-driven templates for business planning and strategy",
+      "tags": ["Business", "Strategy", "Professional"],
+      "features": [
+        "AI business analysis templates",
+        "SWOT analysis pages",
+        "Financial planning sections",
+        "Premium hardcover design"
+      ],
+      "colors": ["Executive Black", "Professional Navy", "Corporate Gray"],
+      "inStock": true,
+      "isNew": false,
+      "isFeatured": true
+    },
+    {
+      "id": "travel-adventure-notebook",
+      "name": "Travel Adventure Notebook",
+      "category": "notebooks",
+      "price": "$34.99",
+      "originalPrice": "$44.99",
+      "rating": 4.8,
+      "reviews": 278,
+      "image": "https://images.pexels.com/photos/1308881/pexels-photo-1308881.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "shortDescription": "Document your journeys with AI travel prompts and maps",
+      "tags": ["Travel", "Adventure", "Memory Keeping"],
+      "features": [
+        "AI travel story prompts",
+        "World map pages",
+        "Pocket-sized design",
+        "Water-resistant cover"
+      ],
+      "colors": ["Adventure Brown", "Explorer Khaki", "Wanderer Blue"],
+      "inStock": true,
+      "isNew": false,
+      "isFeatured": false
+    },
+    {
+      "id": "custom-notecard-set",
+      "name": "Custom AI Notecard Set",
+      "category": "stationery",
+      "price": "$24.99",
+      "originalPrice": "$34.99",
+      "rating": 4.7,
+      "reviews": 89,
+      "image": "https://images.pexels.com/photos/1591056/pexels-photo-1591056.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "shortDescription": "Beautiful AI-designed notecards for every occasion",
+      "tags": ["Custom Design", "Occasions", "Premium Paper"],
+      "features": [
+        "AI-generated unique designs",
+        "Set of 20 cards + envelopes",
+        "Premium cardstock",
+        "Gift box packaging"
+      ],
+      "colors": ["Classic White", "Ivory Cream", "Pearl Gray"],
+      "inStock": true,
+      "isNew": true,
+      "isFeatured": false
+    },
+    {
+      "id": "fitness-wellness-tracker",
+      "name": "Fitness & Wellness Tracker",
+      "category": "planners",
+      "price": "$54.99",
+      "originalPrice": "$69.99",
+      "rating": 4.5,
+      "reviews": 167,
+      "image": "https://images.pexels.com/photos/4498318/pexels-photo-4498318.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "shortDescription": "AI-powered health and fitness tracking system",
+      "tags": ["Health", "Fitness", "Wellness"],
+      "features": [
+        "AI workout suggestions",
+        "Nutrition tracking pages",
+        "Progress visualization",
+        "Motivational quotes"
+      ],
+      "colors": ["Energetic Orange", "Calm Blue", "Natural Green"],
+      "inStock": true,
+      "isNew": false,
+      "isFeatured": false
+    },
+    {
+      "id": "student-academic-planner",
+      "name": "Student Academic Planner",
+      "category": "planners",
+      "price": "$39.99",
+      "originalPrice": "$49.99",
+      "rating": 4.8,
+      "reviews": 312,
+      "image": "https://images.pexels.com/photos/4050299/pexels-photo-4050299.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "shortDescription": "AI-optimized academic planning for students",
+      "tags": ["Academic", "Student Life", "Study Tools"],
+      "features": [
+        "AI study schedule optimization",
+        "Assignment tracking",
+        "Exam preparation sections",
+        "Semester overview pages"
+      ],
+      "colors": ["School Blue", "Campus Green", "Scholar Purple"],
+      "inStock": true,
+      "isNew": true,
+      "isFeatured": true
+    }
+  ]
+}

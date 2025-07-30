@@ -1,0 +1,26 @@
+{
+  "company": {
+    "name": "Penco.in",
+    "tagline": "AI-powered stationery solutions for modern creators"
+  },
+  "contact": {
+    "email": "hello@penco.in",
+    "phone": "+91 98765 43210",
+    "address": {
+      "city": "Mumbai",
+      "country": "India",
+      "full": "Mumbai, Maharashtra, India"
+    }
+  },
+  "social": {
+    "linkedin": "https://linkedin.com/company/penco-in",
+    "twitter": "https://twitter.com/penco_in",
+    "instagram": "https://instagram.com/penco.in",
+    "facebook": "https://facebook.com/penco.in"
+  },
+  "legal": {
+    "copyright": "© 2025 Penco.in. All rights reserved.",
+    "privacy": "/privacy",
+    "terms": "/terms"
+  }
+}
