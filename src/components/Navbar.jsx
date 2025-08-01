@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Home, FolderOpen, User, Mail } from 'lucide-react';
+import { Menu, X, Home, FolderOpen, User, Mail, ShoppingCart } from 'lucide-react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import CartButton from './CartButton';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -97,6 +98,7 @@ const Navbar = () => {
                     </button>
                   )
                 ))}
+                <CartButton scrolled={scrolled || isGalleryPage} />
               </div>
             </div>
             
@@ -166,6 +168,16 @@ const Navbar = () => {
                     </button>
                   );
                 })}
+                
+                {/* Cart Button for Mobile */}
+                <Link
+                  to="/checkout"
+                  onClick={() => setIsOpen(false)}
+                  className="flex items-center space-x-3 px-4 py-3 rounded-lg text-slate-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200 group"
+                >
+                  <ShoppingCart className="w-5 h-5 group-hover:scale-110 transition-transform duration-200" />
+                  <span className="font-medium">Cart</span>
+                </Link>
               </div>
             </div>
             
